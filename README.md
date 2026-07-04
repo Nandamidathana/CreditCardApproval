@@ -96,9 +96,7 @@ python app.py
 Navigate to:
 👉 **[http://127.0.0.1:5005](http://127.0.0.1:5005)**
 
-### 👤 Default Administrator Credentials
-- **Username:** `Nanda`
-- **Password:** `Nanda@2125`
+
 
 ---
 
