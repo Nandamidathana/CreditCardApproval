@@ -311,7 +311,6 @@ function toggleAuthMode() {
     const title = document.getElementById('auth-modal-title');
     const desc = document.getElementById('auth-modal-desc');
     const emailGroup = document.getElementById('auth-email-group');
-    const roleGroup = document.getElementById('auth-role-group');
     const submitBtn = document.getElementById('btn-auth-submit');
     const switchPrompt = document.getElementById('auth-switch-prompt');
     const switchBtn = document.getElementById('btn-auth-switch');
@@ -320,7 +319,6 @@ function toggleAuthMode() {
         title.innerText = "Sign In to FinGuard";
         desc.innerText = "Access history logs and bulk evaluation";
         emailGroup.style.display = 'none';
-        roleGroup.style.display = 'none';
         document.getElementById('auth-email').required = false;
         submitBtn.innerText = "Sign In";
         switchPrompt.innerText = "Don't have an account?";
@@ -329,7 +327,6 @@ function toggleAuthMode() {
         title.innerText = "Register New Account";
         desc.innerText = "Set up your secure client credentials";
         emailGroup.style.display = 'flex';
-        roleGroup.style.display = 'flex';
         document.getElementById('auth-email').required = true;
         submitBtn.innerText = "Register Account";
         switchPrompt.innerText = "Already registered?";
@@ -342,12 +339,11 @@ function handleAuthSubmit(e) {
     const username = document.getElementById('auth-username').value;
     const email = document.getElementById('auth-email').value;
     const password = document.getElementById('auth-password').value;
-    const role = document.getElementById('auth-role').value;
     
     showLoading(isLoginMode ? "Signing in..." : "Creating account...");
     
     const url = isLoginMode ? '/api/auth/login' : '/api/auth/register';
-    const payload = isLoginMode ? { username, password } : { username, email, password, role };
+    const payload = isLoginMode ? { username, password } : { username, email, password };
     
     fetch(url, {
         method: 'POST',
