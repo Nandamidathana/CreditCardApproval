@@ -95,6 +95,12 @@ python app.py
 ### 4. Open Application
 Navigate to:
 👉 **[http://127.0.0.1:5005](http://127.0.0.1:5005)**
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> dbf95a199213bab6f7c12c3d18bf50842f58947f
 ---
 
 ## 📝 Comprehensive Project Documentation
