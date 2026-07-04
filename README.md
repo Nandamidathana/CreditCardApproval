@@ -95,11 +95,6 @@ python app.py
 ### 4. Open Application
 Navigate to:
 👉 **[http://127.0.0.1:5005](http://127.0.0.1:5005)**
-
-### 👤 Default Administrator Credentials
-- **Username:** `Nanda`
-- **Password:** `Nanda@2125`
-
 ---
 
 ## 📝 Comprehensive Project Documentation
