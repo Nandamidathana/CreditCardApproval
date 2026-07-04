@@ -1,0 +1,83 @@
+{
+    "best_model": "Logistic Regression",
+    "models": {
+        "Logistic Regression": {
+            "accuracy": 0.983,
+            "precision": 0.9833,
+            "recall": 0.9964,
+            "f1_score": 0.9898,
+            "confusion_matrix": [
+                [
+                    160,
+                    14
+                ],
+                [
+                    3,
+                    823
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "accuracy": 0.977,
+            "precision": 0.9785,
+            "recall": 0.9939,
+            "f1_score": 0.9862,
+            "confusion_matrix": [
+                [
+                    156,
+                    18
+                ],
+                [
+                    5,
+                    821
+                ]
+            ]
+        },
+        "Random Forest": {
+            "accuracy": 0.983,
+            "precision": 0.9844,
+            "recall": 0.9952,
+            "f1_score": 0.9898,
+            "confusion_matrix": [
+                [
+                    161,
+                    13
+                ],
+                [
+                    4,
+                    822
+                ]
+            ]
+        },
+        "XGBoost": {
+            "accuracy": 0.978,
+            "precision": 0.9809,
+            "recall": 0.9927,
+            "f1_score": 0.9868,
+            "confusion_matrix": [
+                [
+                    158,
+                    16
+                ],
+                [
+                    6,
+                    820
+                ]
+            ]
+        }
+    },
+    "feature_importances": {
+        "Credit_History": 0.4777,
+        "Education_Level": 0.0964,
+        "Marital_Status": 0.0782,
+        "Housing_Type": 0.0675,
+        "Employment_Duration": 0.0668,
+        "Existing_Loans": 0.054,
+        "Annual_Income": 0.0497,
+        "Credit_Inquiries": 0.0398,
+        "Income_Type": 0.0324,
+        "Age": 0.0179,
+        "Family_Members": 0.0115,
+        "Gender": 0.008
+    }
+}

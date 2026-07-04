@@ -1,0 +1,6 @@
+Age,Gender,Income_Type,Annual_Income,Employment_Duration,Education_Level,Marital_Status,Family_Members,Housing_Type,Existing_Loans,Credit_History,Credit_Inquiries
+34,Female,Working,85000,6.5,Higher education,Married,3,Owned,No,Good,0
+21,Male,Working,18000,0.5,Secondary / secondary special,Single,1,Rented,Yes,Bad,6
+55,Female,Pensioner,42000,0.0,Secondary / secondary special,Widow,1,Owned,No,Good,1
+45,Male,Commercial Associate,195000,12.0,Higher education,Married,4,Owned,Yes,Bad,2
+29,Female,State Servant,62000,3.5,Higher education,Civil marriage,2,Rented,No,Good,1
