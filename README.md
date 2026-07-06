@@ -114,3 +114,6 @@ We have compiled detailed documents for each phase of the Software Development L
 6. **[Project Testing](file:///d:/2-2/CreditCardApprovalpro/documentation/6_Project_Testing.md):** The 9-stage automated test suites, manual verification, and performance logs.
 7. **[Project Documentation](file:///d:/2-2/CreditCardApprovalpro/documentation/7_Project_Documentation.md):** Admin and customer operation guides, installation guidelines, and user profiles.
 8. **[Project Demonstration](file:///d:/2-2/CreditCardApprovalpro/documentation/8_Project_Demonstration.md):** Dynamic user flows, mock screenshots, and cloud deployment guides (Render/Railway).
+9. **[Project Demo Documentation (Markdown)](file:///d:/2-2/CreditCardApprovalpro/documentation/Project_Demo_Documentation.md):** Consolidated SmartBridge/Skill Wallet deliverables (Communication, Features Demonstration, Demo Planning, Scalability, Team Involvement).
+10. **[Project Demo Sheets (Printable HTML)](file:///d:/2-2/CreditCardApprovalpro/documentation/Project_Demo_Sheets.html):** Exact visual templates matching the PDF screenshots with inline logos. Open this file in your browser and press `Ctrl+P` to print or save as PDF.
+

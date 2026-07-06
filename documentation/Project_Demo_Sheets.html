@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinGuard AI - Project Demo Documentation Sheets</title>
+  <style>
+    /* Print Styles */
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+      .page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        page-break-after: always;
+        padding: 10mm 15mm;
+      }
+      .page:last-child {
+        page-break-after: avoid;
+      }
+    }
+    @page {
+      size: A4;
+      margin: 15mm 20mm;
+    }
+    /* Screen Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F3F4F6;
+      color: #000;
+      line-height: 1.4;
+    }
+    .page {
+      background: #ffffff;
+      width: 210mm;
+      min-height: 297mm;
+      box-sizing: border-box;
+      padding: 15mm 20mm;
+      margin: 30px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      position: relative;
+    }
+    /* Logo Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .logo-container {
+      height: 45px;
+    }
+    /* Title */
+    .title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0;
+      text-transform: none;
+    }
+    /* Info Table */
+    table.info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table.info-table td {
+      border: 1px solid black;
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+    table.info-table td.label {
+      width: 25%;
+      font-weight: bold;
+    }
+    /* Descriptions */
+    .description {
+      font-size: 13.5px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    .description-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    /* Data Tables */
+    .section-title {
+      font-size: 14.5px;
+      font-weight: bold;
+      margin: 15px 0 8px 0;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    table.data-table th, table.data-table td {
+      border: 1px solid black;
+      padding: 6px 10px;
+      font-size: 12.5px;
+      text-align: left;
+      vertical-align: top;
+    }
+    table.data-table th {
+      font-weight: bold;
+      background-color: #ffffff;
+    }
+    /* Helper class to avoid page split in table rows */
+    tr {
+      page-break-inside: avoid;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COMMUNICATION -->
+  <div class="page">
+    <div class="header">
+      <!-- SmartBridge SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,25 C10,12 28,10 24,20 C20,30 32,32 30,15" fill="none" stroke="#e15b64" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M16,22 C14,14 26,12 22,22 C18,32 28,30 26,18" fill="none" stroke="#abbd81" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20,19 C18,16 24,14 21,23 C18,32 25,28 23,20" fill="none" stroke="#f47e60" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="38" y="22" fill="#374151" font-family="Arial, sans-serif" font-weight="bold" font-size="12" letter-spacing="0.5">SMARTBRIDGE</text>
+        <text x="38" y="32" fill="#3B82F6" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" letter-spacing="0.2">Let's Bridge the Gap</text>
+      </svg>
+      <!-- Skill Wallet SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" fill="#0F172A" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">SKILL</text>
+        <text x="56" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">WALL</text>
+        <g transform="translate(109, 7)">
+          <rect x="0" y="0" width="13" height="13" rx="1.5" fill="#2563EB"/>
+          <rect x="2" y="2" width="9" height="9" rx="0.5" fill="#FFFFFF"/>
+          <path d="M4,5 H9 M4,8 H8" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
+          <rect x="10" y="4" width="3" height="5" rx="0.5" fill="#0F172A"/>
+          <circle cx="11.5" cy="6.5" r="0.5" fill="#FFFFFF"/>
+        </g>
+        <text x="124" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">T</text>
+        <text x="0" y="34" fill="#475569" font-family="Arial, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.5">A SmartBridge Product</text>
+      </svg>
+    </div>
+
+    <div class="title">Communication</div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label">Date</td>
+        <td>15 March 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Team ID</td>
+        <td>creditcardapproval</td>
+      </tr>
+      <tr>
+        <td class="label">Project Name</td>
+        <td>FinGuard AI: Credit Card Approval Prediction System</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks</td>
+        <td>1 Mark</td>
+      </tr>
+    </table>
+
+    <div class="description">
+      <div class="description-title">Communication Plan:</div>
+      Effective communication is essential for a successful project demonstration. This document outlines the communication strategy used within the team and with stakeholders throughout the project lifecycle, including how updates, issues, and feedback were managed.
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.No</th>
+          <th style="width: 25%;">Communication Type</th>
+          <th style="width: 12%;">Frequency</th>
+          <th style="width: 18%;">Channel / Tool</th>
+          <th style="width: 15%;">Participants</th>
+          <th style="width: 25%;">Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Team Standup</td>
+          <td>Daily</td>
+          <td>WhatsApp & MS Teams</td>
+          <td>All Team members</td>
+          <td>Coordinate daily tasks, sync progress, and solve bottlenecks.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Progress Update</td>
+          <td>Weekly</td>
+          <td>Google Meet</td>
+          <td>All Team members</td>
+          <td>Review weekly goals, demo completed components, and update project plans.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Issue / Bug Discussion</td>
+          <td>As Needed</td>
+          <td>GitHub Issues & WhatsApp</td>
+          <td>Technical Team</td>
+          <td>Report, reproduce, and patch bugs encountered in the codebase.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Stakeholder Review</td>
+          <td>Bi-Weekly</td>
+          <td>Google Meet</td>
+          <td>Team Lead / Mentors</td>
+          <td>Present milestones achieved and gather feedback for enhancements.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Final Demo Rehearsal</td>
+          <td>Once</td>
+          <td>MS Teams</td>
+          <td>All Team members</td>
+          <td>Dry-run the presentation sequence, verify roles, and test screen-share.</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Code Review & Merge</td>
+          <td>Bi-Weekly</td>
+          <td>GitHub Pull Requests</td>
+          <td>All Team members</td>
+          <td>Approve code modifications, execute test suites, and merge to main branch.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Communication Challenges & Resolutions:</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 8%;">S.No</th>
+          <th style="width: 42%;">Challenge Faced</th>
+          <th style="width: 50%;">Resolution / Action Taken</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Scheduling synchronous meetings across members with different academic schedules.</td>
+          <td>Established a quick 15-minute async update rule on WhatsApp and booked weekend Google Meet syncs in advance.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Resolving REST API payload inconsistencies between frontend developers and backend developers.</td>
+          <td>Documented all API requests/responses clearly on GitHub Issues using JSON mock templates.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Resolving Git merge conflicts when integrating styling in index.html.</td>
+          <td>Used branch protection rules and peer code reviews before merging pull requests.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PAGE 2: DEMONSTRATION OF PROPOSED FEATURES -->
+  <div class="page">
+    <div class="header">
+      <!-- SmartBridge SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,25 C10,12 28,10 24,20 C20,30 32,32 30,15" fill="none" stroke="#e15b64" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M16,22 C14,14 26,12 22,22 C18,32 28,30 26,18" fill="none" stroke="#abbd81" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20,19 C18,16 24,14 21,23 C18,32 25,28 23,20" fill="none" stroke="#f47e60" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="38" y="22" fill="#374151" font-family="Arial, sans-serif" font-weight="bold" font-size="12" letter-spacing="0.5">SMARTBRIDGE</text>
+        <text x="38" y="32" fill="#3B82F6" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" letter-spacing="0.2">Let's Bridge the Gap</text>
+      </svg>
+      <!-- Skill Wallet SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" fill="#0F172A" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">SKILL</text>
+        <text x="56" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">WALL</text>
+        <g transform="translate(109, 7)">
+          <rect x="0" y="0" width="13" height="13" rx="1.5" fill="#2563EB"/>
+          <rect x="2" y="2" width="9" height="9" rx="0.5" fill="#FFFFFF"/>
+          <path d="M4,5 H9 M4,8 H8" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
+          <rect x="10" y="4" width="3" height="5" rx="0.5" fill="#0F172A"/>
+          <circle cx="11.5" cy="6.5" r="0.5" fill="#FFFFFF"/>
+        </g>
+        <text x="124" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">T</text>
+        <text x="0" y="34" fill="#475569" font-family="Arial, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.5">A SmartBridge Product</text>
+      </svg>
+    </div>
+
+    <div class="title">Demonstration of Proposed Features</div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label">Date</td>
+        <td>15 March 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Team ID</td>
+        <td>creditcardapproval</td>
+      </tr>
+      <tr>
+        <td class="label">Project Name</td>
+        <td>FinGuard AI: Credit Card Approval Prediction System</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks</td>
+        <td>1 Mark</td>
+      </tr>
+    </table>
+
+    <div class="description">
+      <div class="description-title">Demonstration of Proposed Features:</div>
+      This document captures all the features that were proposed during the project planning phase and tracks whether each feature was successfully implemented and demonstrated. It serves as evidence of the team's ability to deliver on the proposed solution.
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.No</th>
+          <th style="width: 25%;">Feature Name</th>
+          <th style="width: 35%;">Description</th>
+          <th style="width: 15%;">Status (Implemented / Partial / Pending)</th>
+          <th style="width: 10%;">Demonstrated (Yes / No)</th>
+          <th style="width: 15%;">Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Secure Multi-Step Web Form</td>
+          <td>Interactive 3-stage form collecting personal, job, and credit data with boundary checks.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Includes custom helper presets.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Radial Probability Dial</td>
+          <td>Visual indicator indicating approval probability with colors changing from red to green.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Updates in real time.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Explainable AI (XAI) Highlights</td>
+          <td>Details the top positive factors or risk metrics with action recommendations.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Helps user understand decision.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Bulk Prediction Engine</td>
+          <td>Accepts batch CSV uploads, processes applications, and displays aggregate dashboards.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Handles up to 1000 records.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Model Insights Dashboard</td>
+          <td>Bar charts showing comparative algorithm accuracy metrics and horizontal feature weights.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Rendered with Chart.js.</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Saved Reports & PDF Download</td>
+          <td>Persists historic runs and generates downloadable underwriting certificates.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Uses jsPDF framework.</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Role Security Hardening</td>
+          <td>Restricts guest users and enforces customer/analyst dashboard routes.</td>
+          <td>Implemented</td>
+          <td>Yes</td>
+          <td>Secure sqlite auth backend.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Feature Implementation Summary:</div>
+    <table class="info-table" style="width: 100%;">
+      <tr>
+        <td class="label" style="width: 50%;">Total Features Proposed</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td class="label">Total Features Implemented</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td class="label">Total Features Demonstrated</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td class="label">Overall Implementation Rate (%)</td>
+        <td>100%</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PAGE 3: PROJECT DEMO PLANNING -->
+  <div class="page">
+    <div class="header">
+      <!-- SmartBridge SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,25 C10,12 28,10 24,20 C20,30 32,32 30,15" fill="none" stroke="#e15b64" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M16,22 C14,14 26,12 22,22 C18,32 28,30 26,18" fill="none" stroke="#abbd81" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20,19 C18,16 24,14 21,23 C18,32 25,28 23,20" fill="none" stroke="#f47e60" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="38" y="22" fill="#374151" font-family="Arial, sans-serif" font-weight="bold" font-size="12" letter-spacing="0.5">SMARTBRIDGE</text>
+        <text x="38" y="32" fill="#3B82F6" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" letter-spacing="0.2">Let's Bridge the Gap</text>
+      </svg>
+      <!-- Skill Wallet SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" fill="#0F172A" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">SKILL</text>
+        <text x="56" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">WALL</text>
+        <g transform="translate(109, 7)">
+          <rect x="0" y="0" width="13" height="13" rx="1.5" fill="#2563EB"/>
+          <rect x="2" y="2" width="9" height="9" rx="0.5" fill="#FFFFFF"/>
+          <path d="M4,5 H9 M4,8 H8" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
+          <rect x="10" y="4" width="3" height="5" rx="0.5" fill="#0F172A"/>
+          <circle cx="11.5" cy="6.5" r="0.5" fill="#FFFFFF"/>
+        </g>
+        <text x="124" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">T</text>
+        <text x="0" y="34" fill="#475569" font-family="Arial, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.5">A SmartBridge Product</text>
+      </svg>
+    </div>
+
+    <div class="title">Project Demo Planning</div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label">Date</td>
+        <td>15 March 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Team ID</td>
+        <td>creditcardapproval</td>
+      </tr>
+      <tr>
+        <td class="label">Project Name</td>
+        <td>FinGuard AI: Credit Card Approval Prediction System</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks</td>
+        <td>1 Mark</td>
+      </tr>
+    </table>
+
+    <div class="description">
+      <div class="description-title">Project Demo Planning:</div>
+      A well-structured demo plan ensures that the team presents the project effectively, covering all key aspects in a clear and organized manner. This document outlines the plan for demonstrating the project, including the flow of the demo, key features to highlight, and responsibilities of each team member.
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.No</th>
+          <th style="width: 25%;">Demo Section</th>
+          <th style="width: 40%;">Description</th>
+          <th style="width: 15%;">Duration (mins)</th>
+          <th style="width: 15%;">Responsible Member</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Introduction & Problem Statement</td>
+          <td>Present manual credit review bottlenecks (delays, bias, complexity) and overview of FinGuard AI.</td>
+          <td>3 mins</td>
+          <td>Yasaswi Dadi</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Solution Architecture & Backend</td>
+          <td>Outline the tech stack: Flask REST API, SQLite DB, and XGBoost machine learning model.</td>
+          <td>3 mins</td>
+          <td>Koduri Venkata Narasimha Reddy</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Eligibility Form & Presets</td>
+          <td>Demonstrate signing in, using preset profiles, and displaying radial probability with XAI insights.</td>
+          <td>4 mins</td>
+          <td>Archana Choppa</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Bulk Evaluation & Reports</td>
+          <td>Show batch CSV processing, filtering processed records, and exporting PDF certificates.</td>
+          <td>3 mins</td>
+          <td>Midathana Muktananda</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Model Analytics</td>
+          <td>Show Model Insights dashboard comparison graphs and horizontal feature importance charts.</td>
+          <td>3 mins</td>
+          <td>Abdul Nadeem Tousif</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Conclusion & Q&A</td>
+          <td>Address questions about model precision, features, and deployment parameters.</td>
+          <td>4 mins</td>
+          <td>Yasaswi Dadi & Team</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Demo Flow Summary:</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 10%;">Step</th>
+          <th style="width: 40%;">Activity</th>
+          <th style="width: 50%;">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Introduction & Problem Statement</td>
+          <td>Initiate slides, highlight underwriting delays/inconsistencies, and introduce system features.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Solution Overview</td>
+          <td>Describe the Flask routes, database schema, pre-trained XGBoost pipeline, and fallback options.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Live Feature Demonstration</td>
+          <td>Demonstrate single application eligibility checks, preset loads, batch evaluation, and certificate exports.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Q&A Session</td>
+          <td>Respond to questions regarding classification metrics, feature importances, and access boundaries.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PAGE 4: SCALABILITY & FUTURE PLAN -->
+  <div class="page">
+    <div class="header">
+      <!-- SmartBridge SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,25 C10,12 28,10 24,20 C20,30 32,32 30,15" fill="none" stroke="#e15b64" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M16,22 C14,14 26,12 22,22 C18,32 28,30 26,18" fill="none" stroke="#abbd81" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20,19 C18,16 24,14 21,23 C18,32 25,28 23,20" fill="none" stroke="#f47e60" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="38" y="22" fill="#374151" font-family="Arial, sans-serif" font-weight="bold" font-size="12" letter-spacing="0.5">SMARTBRIDGE</text>
+        <text x="38" y="32" fill="#3B82F6" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" letter-spacing="0.2">Let's Bridge the Gap</text>
+      </svg>
+      <!-- Skill Wallet SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" fill="#0F172A" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">SKILL</text>
+        <text x="56" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">WALL</text>
+        <g transform="translate(109, 7)">
+          <rect x="0" y="0" width="13" height="13" rx="1.5" fill="#2563EB"/>
+          <rect x="2" y="2" width="9" height="9" rx="0.5" fill="#FFFFFF"/>
+          <path d="M4,5 H9 M4,8 H8" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
+          <rect x="10" y="4" width="3" height="5" rx="0.5" fill="#0F172A"/>
+          <circle cx="11.5" cy="6.5" r="0.5" fill="#FFFFFF"/>
+        </g>
+        <text x="124" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">T</text>
+        <text x="0" y="34" fill="#475569" font-family="Arial, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.5">A SmartBridge Product</text>
+      </svg>
+    </div>
+
+    <div class="title">Scalability & Future Plan</div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label">Date</td>
+        <td>15 March 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Team ID</td>
+        <td>creditcardapproval</td>
+      </tr>
+      <tr>
+        <td class="label">Project Name</td>
+        <td>FinGuard AI: Credit Card Approval Prediction System</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks</td>
+        <td>1 Mark</td>
+      </tr>
+    </table>
+
+    <div class="description">
+      <div class="description-title">Scalability & Future Plan:</div>
+      This document outlines how the current project solution can be scaled to handle larger user bases, increased data loads, or extended features in the future. It also captures the team's roadmap for enhancing and evolving the project beyond its current state.
+    </div>
+
+    <div class="section-title" style="margin-top: 5px;">Current System Limitations:</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 8%;">S.No</th>
+          <th style="width: 32%;">Limitation</th>
+          <th style="width: 40%;">Impact</th>
+          <th style="width: 20%;">Priority to Address (High / Medium / Low)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>SQLite single-file database.</td>
+          <td>Write locks occur during simultaneous bulk CSV uploads.</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>In-process model inference.</td>
+          <td>Blocks the main Flask thread under heavy API request volume.</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Client-side jsPDF rendering.</td>
+          <td>Consumes client-side memory and could fail on large historical exports.</td>
+          <td>Low</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Scalability Plan:</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 8%;">S.No</th>
+          <th style="width: 25%;">Scalability Aspect</th>
+          <th style="width: 30%;">Current State</th>
+          <th style="width: 37%;">Proposed Upgrade / Solution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>User Load</td>
+          <td>Flask built-in server (single worker process).</td>
+          <td>Migrate to Gunicorn or Nginx with multi-threaded worker configurations.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Data Storage</td>
+          <td>Single-file SQLite database.</td>
+          <td>Migrate database to PostgreSQL or MySQL for concurrent operations.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Performance</td>
+          <td>Synchronous predictions.</td>
+          <td>Integrate Celery task queues with Redis to handle batch evaluations asynchronously.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Security</td>
+          <td>Cookie sessions.</td>
+          <td>Upgrade to JSON Web Tokens (JWT) for stateless session validation.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Future Roadmap:</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 15%;">Phase</th>
+          <th style="width: 35%;">Planned Feature / Enhancement</th>
+          <th style="width: 20%;">Target Timeline</th>
+          <th style="width: 30%;">Expected Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Phase 1</td>
+          <td>Core Pipeline & MVP Setup</td>
+          <td>Month 1 (Completed)</td>
+          <td>Functional Flask app with XGBoost classification.</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td>
+          <td>Database Scale & API Migration</td>
+          <td>Month 3</td>
+          <td>Seamless handling of multiple bulk uploads.</td>
+        </tr>
+        <tr>
+          <td>Phase 3</td>
+          <td>Explainable AI Expansion</td>
+          <td>Month 6</td>
+          <td>Mathematical insights using SHAP and LIME values.</td>
+        </tr>
+        <tr>
+          <td>Phase 4</td>
+          <td>Mobile Client Port</td>
+          <td>Month 12</td>
+          <td>Direct API access for third-party loan brokers.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PAGE 5: TEAM INVOLVEMENT IN DEMONSTRATION -->
+  <div class="page">
+    <div class="header">
+      <!-- SmartBridge SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,25 C10,12 28,10 24,20 C20,30 32,32 30,15" fill="none" stroke="#e15b64" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M16,22 C14,14 26,12 22,22 C18,32 28,30 26,18" fill="none" stroke="#abbd81" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20,19 C18,16 24,14 21,23 C18,32 25,28 23,20" fill="none" stroke="#f47e60" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="38" y="22" fill="#374151" font-family="Arial, sans-serif" font-weight="bold" font-size="12" letter-spacing="0.5">SMARTBRIDGE</text>
+        <text x="38" y="32" fill="#3B82F6" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" letter-spacing="0.2">Let's Bridge the Gap</text>
+      </svg>
+      <!-- Skill Wallet SVG Logo -->
+      <svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" fill="#0F172A" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">SKILL</text>
+        <text x="56" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">WALL</text>
+        <g transform="translate(109, 7)">
+          <rect x="0" y="0" width="13" height="13" rx="1.5" fill="#2563EB"/>
+          <rect x="2" y="2" width="9" height="9" rx="0.5" fill="#FFFFFF"/>
+          <path d="M4,5 H9 M4,8 H8" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
+          <rect x="10" y="4" width="3" height="5" rx="0.5" fill="#0F172A"/>
+          <circle cx="11.5" cy="6.5" r="0.5" fill="#FFFFFF"/>
+        </g>
+        <text x="124" y="22" fill="#2563EB" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="0.2">T</text>
+        <text x="0" y="34" fill="#475569" font-family="Arial, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.5">A SmartBridge Product</text>
+      </svg>
+    </div>
+
+    <div class="title">Team Involvement in Demonstration</div>
+
+    <table class="info-table">
+      <tr>
+        <td class="label">Date</td>
+        <td>15 March 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Team ID</td>
+        <td>creditcardapproval</td>
+      </tr>
+      <tr>
+        <td class="label">Project Name</td>
+        <td>FinGuard AI: Credit Card Approval Prediction System</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks</td>
+        <td>1 Mark</td>
+      </tr>
+    </table>
+
+    <div class="description">
+      <div class="description-title">Team Involvement in Demonstration:</div>
+      This document records the active participation and roles of each team member during the project demonstration. It ensures that every member contributes meaningfully to the presentation and that responsibilities are distributed fairly and clearly.
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.No</th>
+          <th style="width: 25%;">Team Member Name</th>
+          <th style="width: 15%;">Role in Demo</th>
+          <th style="width: 20%;">Section Presented</th>
+          <th style="width: 23%;">Contribution Summary</th>
+          <th style="width: 12%;">Participation (Active / Passive)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Koduri Venkata Narasimha Reddy</td>
+          <td>Team Lead</td>
+          <td>Solution Architecture & Backend</td>
+          <td>Developed Flask routes, SQLite schemas, and verified integration.</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Archana Choppa</td>
+          <td>Member</td>
+          <td>Eligibility Form & Presets</td>
+          <td>Designed multi-step validation form and preset triggers.</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Abdul Nadeem Tousif</td>
+          <td>Member</td>
+          <td>Model Analytics</td>
+          <td>Developed ML pipelines, model metrics charts, and feature importances.</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Midathana Muktananda</td>
+          <td>Member</td>
+          <td>Bulk Evaluation & Reports</td>
+          <td>Created bulk uploader backend and PDF certificate export.</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Yasaswi Dadi</td>
+          <td>Member</td>
+          <td>Intro & Q&A Coordination</td>
+          <td>Authored slides, presented problem context, and handled Q&A.</td>
+          <td>Active</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Team Coordination Notes:</div>
+    <table class="info-table" style="width: 100%;">
+      <tr>
+        <td class="label" style="width: 50%;">Aspect</td>
+        <td>Details</td>
+      </tr>
+      <tr>
+        <td class="label">Team Leader / Coordinator</td>
+        <td>Koduri Venkata Narasimha Reddy</td>
+      </tr>
+      <tr>
+        <td class="label">Overall Team Coordination Rating (1-5)</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td class="label">Any issues during demo</td>
+        <td>None. All presenters transitioned slide controls and screens smoothly.</td>
+      </tr>
+      <tr>
+        <td class="label">How issues were resolved</td>
+        <td>N/A (Pre-recorded backup videos were prepared in case of connection loss, but not required).</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
